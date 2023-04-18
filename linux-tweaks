@@ -9,7 +9,7 @@ echo 'list of avaible args
 
 if [[ $d != java19 && $d != java17 && $d != java8 && $d != ntrep ]]; then
  echo 'Bad arg! This may help you'
- bash /home/$USER/.local/bin/linux-tweaks
+ bash /bin/linux-tweaks
 fi
 
 if [[ $d == java19 ]]; then
