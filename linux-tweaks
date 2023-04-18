@@ -1,19 +1,19 @@
 #!/bin/bash
 DIR="/home/$USER/.LinuXTweaks"
 echo 'list of avaible args
-    linux-tweaks java18 > switch to Java 18 (Requires installed Java 18 openjdk)
+    linux-tweaks java18 > switch to Java 19 (Requires installed Java 19 openjdk)
     linux-tweaks java17 > switch to java 17 (Requires installed Java 17 openjdk)
     linux-tweaks java8 > switch to java8 (Requires installed java8 openjdk)
     linux-tweaks ntrep > repair network after airmon-ng (Work if u use networkmanager)'
     read -p 'Choose what to do: ' d
 
-if [[ $d != java18 && $d != java17 && $d != java8 && $d != ntrep ]]; then
+if [[ $d != java19 && $d != java17 && $d != java8 && $d != ntrep ]]; then
  echo 'Bad arg! This may help you'
  bash /home/$USER/.local/bin/linux-tweaks
 fi
 
-if [[ $d == java18 ]]; then
-    echo 'Switching to Java 18, enter root password'
+if [[ $d == java19 ]]; then
+    echo 'Switching to Java 19, enter root password'
     bash $DIR/j18sw.sh
     echo 'Done!'
 fi
