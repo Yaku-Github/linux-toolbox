@@ -1,1 +1,1 @@
-sudo archlinux-java set java-18-openjdk
+sudo archlinux-java set java-19-openjdk
